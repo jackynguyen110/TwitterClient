@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "twitterAppTest/ViewController.swift"
+            timestampString = "480508403.240286"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "onLoginTapped(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "twitterAppTest.ViewController.onLoginTapped (twitterAppTest.ViewController)(Swift.AnyObject) -&gt; ()"
+                  moduleName = "twitterAppTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derekdo/Desktop/Swift%20projects/TwitterClient/twitterAppTest/ViewController.swift"
+                  timestampString = "480508403.522597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1363">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "twitterAppTest.ViewController.(onLoginTapped (twitterAppTest.ViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #1)"
+                  moduleName = "twitterAppTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derekdo/Desktop/Swift%20projects/TwitterClient/twitterAppTest/ViewController.swift"
+                  timestampString = "480508403.527915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "163">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "twitterAppTest.ViewController.(onLoginTapped (twitterAppTest.ViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #2)"
+                  moduleName = "twitterAppTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derekdo/Desktop/Swift%20projects/TwitterClient/twitterAppTest/ViewController.swift"
+                  timestampString = "480508403.528036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
