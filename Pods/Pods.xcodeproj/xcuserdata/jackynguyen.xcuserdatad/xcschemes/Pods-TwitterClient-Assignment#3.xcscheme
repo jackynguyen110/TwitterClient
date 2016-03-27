@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D626742BC0B7132ADCFF6DA2'
-               BlueprintName = 'AFNetworking'
+               BlueprintIdentifier = '8F9F3A2FE9F9657DAA2CD73E'
+               BlueprintName = 'Pods-TwitterClient-Assignment#3'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AFNetworking.framework'>
+               BuildableName = 'Pods_TwitterClient_Assignment_3.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

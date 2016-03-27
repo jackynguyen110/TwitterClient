@@ -3,7 +3,8 @@
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'twitterAppTest' do
-pod 'AFNetworking’
-pod ‘BDBOAuth1Manager’
+target 'TwitterClient-Assignment#3' do
+  pod "AFNetworking"
+  pod "BDBOAuth1Manager"
 end
+
