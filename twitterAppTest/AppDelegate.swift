@@ -43,20 +43,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        let requestToken = BDBOAuth1Credential(queryString: url.query)
-        let twiterClient = BDBOAuth1SessionManager(baseURL: NSURL(string: "https://api.twitter.com")!, consumerKey: "1q9ZuW7Kn9j1GSUctCOO2LZuh", consumerSecret: "TH7jVjkyQcy4Fv62ZOZTPaDVqkkgZ10JsoxYUEFgm8iDM9M1Gu")
-        twiterClient.fetchAccessTokenWithPath("oauth/access_token", method: "POST", requestToken: requestToken, success: { (accessToken: BDBOAuth1Credential!) -> Void in
-            print("i got the access token")
-            twiterClient.GET("1.1/account/  ", parameters: nil, progress: nil, success: { (task:NSURLSessionDataTask, response:AnyObject?) -> Void in
-                    let user = response as! NSDictionary
-                    print(user)
-                }, failure: { (task:NSURLSessionDataTask?, error:NSError) -> Void in
-                    print(error.localizedDescription)
+        
+        //TwitterClient.shareInstance.openURL(url)
+        
+        let client = TwitterClient.shareInstance
+        client.fetchAccessTokenWithPath("oauth/access_token", method: nil, requestToken: nil, success: { (accessToken:BDBOAuth1Credential!) -> Void in
+            client.currentAccount()
+            client.homeTimeLine({ (tweets:[Tweet]) -> () in
+                for tweet in tweets {
+                    print(tweet.text)
+                }
+                }, failure: { (error:NSError) -> () in
+                    
             })
-            }) { (error : NSError!) -> Void in
-                print(error.localizedDescription)
-            }
-            return true
+            }) { (error:NSError!) -> Void in
+                
+        }
+        
+        return true
     }
 
 

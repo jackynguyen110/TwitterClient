@@ -15,7 +15,7 @@ class Tweet: NSObject {
     var favoritesCount: Int = 0
     
     init(dictionary: NSDictionary) {
-        text = dictionary["dictionary"] as! String?
+        text = dictionary["text"] as! String?
         let timeStampString = dictionary["created_at"] as! String?
         
         let formater = NSDateFormatter()
@@ -31,9 +31,10 @@ class Tweet: NSObject {
         var tweets = [Tweet]()
         
         for dictionary in dictionaries {
-            var tweet = Tweet(dictionary: dictionary)
+            let tweet = Tweet(dictionary: dictionary)
             tweets.append(tweet)
         }
+        return tweets
     }
  
 }
